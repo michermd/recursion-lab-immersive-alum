@@ -46,13 +46,10 @@ function maxOf(myArray) {
 
 function includesNumber(myArray, myNumber) {
   if (!myArray.length) {
-    console.log(myArray);
     return false;
   } else if (myArray[0] === myNumber) {
-    console.log(myArray[0]);
     return true;
   } else {
-    console.log(myArray.slice(1));
     return includesNumber(myArray.slice(1), myNumber);
   }
 }
